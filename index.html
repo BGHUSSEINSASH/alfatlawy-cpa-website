@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alfatlawy Co - شركة الفتلاوي</title>
+    <meta name="description" content="شركة الفتلاوي للمحاسبة والتدقيق - خدمات محاسبية واستشارية متكاملة بأعلى معايير الجودة منذ 1994">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo-wrap">
+                <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/Untitled_design-removebg-preview.png" alt="Loading" class="preloader-logo">
+                <div class="preloader-ring"></div>
+                <div class="preloader-ring ring-2"></div>
+            </div>
+            <div class="preloader-text">alfatlawy <span>&</span> Co</div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="masthead">
+        <div class="header-inner">
+            <div class="logo animated-logo">
+                <a href="index.html">
+                    <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/Untitled_design-removebg-preview.png" alt="alfatlawy Co Logo">
+                    <div class="logo-glow"></div>
+                </a>
+            </div>
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active" data-i18n="nav.home">الرئيسية</a></li>
+                    <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+                    <li><a href="services.html" data-i18n="nav.services">خدماتنا</a></li>
+                    <li><a href="team.html" data-i18n="nav.team">فريقنا</a></li>
+                    <li><a href="partnership.html" data-i18n="nav.partnership">شراكتنا الدولية</a></li>
+                    <li><a href="join.html" data-i18n="nav.contact">للتواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="تبديل المظهر">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span id="currentLang">AR</span>
+                        <i class="fas fa-chevron-down lang-arrow"></i>
+                    </button>
+                    <div class="lang-menu" id="langMenu">
+                        <button data-lang="ar" class="lang-option active">🇮🇶 العربية</button>
+                        <button data-lang="en" class="lang-option">🇬🇧 English</button>
+                        <button data-lang="ku" class="lang-option">🇮🇶 کوردی</button>
+                        <button data-lang="tr" class="lang-option">🇹🇷 Türkçe</button>
+                        <button data-lang="fa" class="lang-option">🇮🇷 فارسی</button>
+                        <button data-lang="fr" class="lang-option">🇫🇷 Français</button>
+                        <button data-lang="de" class="lang-option">🇩🇪 Deutsch</button>
+                        <button data-lang="es" class="lang-option">🇪🇸 Español</button>
+                        <button data-lang="zh" class="lang-option">🇨🇳 中文</button>
+                        <button data-lang="ru" class="lang-option">🇷🇺 Русский</button>
+                    </div>
+                </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">
+                    <span class="hamburger">
+                        <span></span><span></span><span></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80" alt="" class="hero-bg-img" loading="lazy">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="hero-badge fade-in"><i class="fas fa-shield-halved"></i> <span data-i18n="hero.badge">شركة الفتلاوي للمحاسبة والتدقيق</span></div>
+                <h1 class="fade-in" data-i18n="hero.title_prefix">نقدم أفضل الخدمات في مجال</h1>
+                <div class="typed-line fade-in"><span class="gradient-text" id="typedText"></span></div>
+                <p class="hero-desc fade-in" data-i18n="hero.desc">نقدم خدمات محاسبية واستشارية متكاملة بأعلى معايير الجودة والمهنية منذ أكثر من 30 عاماً</p>
+                <div class="hero-btns fade-in">
+                    <a href="services.html" class="btn btn-primary" data-i18n="hero.btn_services">خدماتنا <i class="fas fa-arrow-left"></i></a>
+                    <a href="about.html" class="btn btn-glass" data-i18n="hero.btn_about">من نحن</a>
+                </div>
+                <div class="hero-trust fade-in">
+                    <span class="trust-item"><i class="fas fa-certificate"></i> <span data-i18n="hero.trust1">معتمدون دولياً</span></span>
+                    <span class="trust-divider"></span>
+                    <span class="trust-item"><i class="fas fa-shield-halved"></i> <span data-i18n="hero.trust2">منذ 1994</span></span>
+                    <span class="trust-divider"></span>
+                    <span class="trust-item"><i class="fas fa-star"></i> <span data-i18n="hero.trust3">+500 عميل</span></span>
+                </div>
+                <div class="hero-scroll-indicator">
+                    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80" alt="" class="stats-bg-img" loading="lazy">
+        <div class="stats-grid">
+            <div class="stat-item fade-in">
+                <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                <div class="stat-number" data-count="30">0</div>
+                <div class="stat-label" data-i18n="stats.experience">سنوات الخبرة</div>
+                <div class="stat-plus">+</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-icon"><i class="fas fa-handshake"></i></div>
+                <div class="stat-number" data-count="500">0</div>
+                <div class="stat-label" data-i18n="stats.clients">عميل سعيد</div>
+                <div class="stat-plus">+</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="stat-number" data-count="1200">0</div>
+                <div class="stat-label" data-i18n="stats.projects">مشروع مكتمل</div>
+                <div class="stat-plus">+</div>
+            </div>
+            <div class="stat-item fade-in">
+                <div class="stat-icon"><i class="fas fa-user-tie"></i></div>
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label" data-i18n="stats.experts">خبير متخصص</div>
+                <div class="stat-plus">+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-tag" data-i18n="about.tag">تعرف علينا</div>
+                <div class="section-divider"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-img fade-in">
+                    <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/12/modern-equipped-computer-lab.webp" alt="مكتب الشركة">
+                    <div class="img-decoration"></div>
+                </div>
+                <div class="about-text fade-in">
+                    <h2 data-i18n="about.title">من نحن</h2>
+                    <p data-i18n="about.p1">في عام 1994 بدأت رحلتنا كوكالة تأمين لشركة التأمين الوطنية. ومع مرور السنوات توسعنا في مجالات المحاسبة والتدقيق والاستشارات. اليوم نحن شركة متكاملة تقدم خدمات احترافية بمعايير عالمية.</p>
+                    <p data-i18n="about.p2">نحن نؤمن بأن النجاح يأتي من خلال بناء علاقات طويلة الأمد مع عملائنا، قائمة على الثقة والشفافية والتميز في تقديم الخدمات المهنية.</p>
+                    <a href="about.html" class="btn btn-primary" data-i18n="about.btn">المزيد عنا <i class="fas fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-tag" data-i18n="services.tag">ماذا نقدم</div>
+                <div class="section-divider"></div>
+                <h2 data-i18n="services.title">خدماتنا</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="card-shine"></div>
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="التدقيق" class="service-card-img" loading="lazy">
+                    </div>
+                    <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
+                    <h3 data-i18n="services.audit">التدقيق</h3>
+                    <p data-i18n="services.audit_desc">خدمات تدقيق خارجي وداخلي ومسبق بأعلى معايير الجودة المهنية</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-left"></i></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="card-shine"></div>
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" alt="المحاسبة" class="service-card-img" loading="lazy">
+                    </div>
+                    <div class="service-icon"><i class="fas fa-calculator"></i></div>
+                    <h3 data-i18n="services.accounting">المحاسبة</h3>
+                    <p data-i18n="services.accounting_desc">مسك السجلات المحاسبية وترجمة القوائم المالية وفقاً للمعايير الدولية</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-left"></i></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="card-shine"></div>
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1586473219010-2ffc57b0d282?auto=format&fit=crop&w=600&q=80" alt="الضرائب" class="service-card-img" loading="lazy">
+                    </div>
+                    <div class="service-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3 data-i18n="services.tax">الضرائب</h3>
+                    <p data-i18n="services.tax_desc">إدارة الضرائب والتخطيط الضريبي الاستراتيجي والإقرارات الضريبية</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-left"></i></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="card-shine"></div>
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848e66ad76?auto=format&fit=crop&w=600&q=80" alt="التأمين" class="service-card-img" loading="lazy">
+                    </div>
+                    <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="services.insurance">التأمين</h3>
+                    <p data-i18n="services.insurance_desc">حلول تأمينية شاملة لحماية الشركات من المخاطر المحتملة</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-left"></i></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="card-shine"></div>
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80" alt="الاستشارات الإدارية" class="service-card-img" loading="lazy">
+                    </div>
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3 data-i18n="services.consulting">الاستشارات الإدارية</h3>
+                    <p data-i18n="services.consulting_desc">استشارات متخصصة لتحسين الأداء التنظيمي ودفع النمو الاستراتيجي</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-left"></i></div>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="card-shine"></div>
+                    <div class="service-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=600&q=80" alt="الموارد البشرية" class="service-card-img" loading="lazy">
+                    </div>
+                    <div class="service-icon"><i class="fas fa-users-cog"></i></div>
+                    <h3 data-i18n="services.hr">الموارد البشرية</h3>
+                    <p data-i18n="services.hr_desc">حلول متكاملة لإدارة الموارد البشرية واكتساب المواهب</p>
+                    <div class="card-arrow"><i class="fas fa-arrow-left"></i></div>
+                </div>
+            </div>
+            <div class="center-btn fade-in">
+                <a href="services.html" class="btn btn-primary" data-i18n="services.btn">جميع خدماتنا <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Preview -->
+    <section class="team-preview">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-tag" data-i18n="team.tag">فريق العمل</div>
+                <div class="section-divider"></div>
+                <h2 data-i18n="team.title">فريقنا</h2>
+            </div>
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <div class="team-img-wrap">
+                        <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/co-founder-2.png" alt="المحاسب القانوني اكرم حسن عبد الحسين">
+                        <div class="team-overlay"><a href="team.html"><i class="fas fa-arrow-left"></i></a></div>
+                    </div>
+                    <h4 data-i18n="team.m1_name">المحاسب القانوني اكرم حسن عبد الحسين</h4>
+                    <p data-i18n="team.founder">المؤسس والشريك الإداري</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-img-wrap">
+                        <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/co-founder-1.png" alt="حسن عبد الحسين حمادي الفتلاوي">
+                        <div class="team-overlay"><a href="team.html"><i class="fas fa-arrow-left"></i></a></div>
+                    </div>
+                    <h4 data-i18n="team.m2_name">حسن عبد الحسين حمادي الفتلاوي</h4>
+                    <p data-i18n="team.cofounder">المؤسس المشارك</p>
+                </div>
+                <div class="team-card fade-in">
+                    <div class="team-img-wrap">
+                        <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/team-member-1.png" alt="فاضل عبد الحسين">
+                        <div class="team-overlay"><a href="team.html"><i class="fas fa-arrow-left"></i></a></div>
+                    </div>
+                    <h4 data-i18n="team.m3_name">فاضل عبد الحسين</h4>
+                    <p data-i18n="team.legal">مستشار قانوني</p>
+                </div>
+            </div>
+            <div class="center-btn fade-in">
+                <a href="team.html" class="btn btn-primary" data-i18n="team.btn">فريقنا بالكامل <i class="fas fa-arrow-left"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile App -->
+    <section class="app-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-tag" data-i18n="app.tag">تطبيق الهاتف</div>
+                <div class="section-divider"></div>
+                <h2 data-i18n="app.title">حمّل تطبيقنا الآن</h2>
+                <p class="section-desc" data-i18n="app.desc">احصل على جميع خدماتنا المحاسبية والاستشارية في متناول يدك. تطبيق شركة الفتلاوي متاح الآن على أندرويد وآيفون.</p>
+            </div>
+            <div class="app-grid">
+                <div class="app-content fade-in">
+                    <div class="app-features">
+                        <div class="app-feature">
+                            <div class="app-feature-icon"><i class="fas fa-bell"></i></div>
+                            <div class="app-feature-text">
+                                <strong data-i18n="app.f1">إشعارات فورية بآخر التحديثات</strong>
+                                <span data-i18n="app.f1_desc">تابع حالة ملفاتك ومعاملاتك لحظة بلحظة</span>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="app-feature-icon"><i class="fas fa-file-invoice"></i></div>
+                            <div class="app-feature-text">
+                                <strong data-i18n="app.f2">متابعة الملفات والتقارير المالية</strong>
+                                <span data-i18n="app.f2_desc">اطّلع على تقاريرك المالية في أي وقت ومكان</span>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="app-feature-icon"><i class="fas fa-comments"></i></div>
+                            <div class="app-feature-text">
+                                <strong data-i18n="app.f3">تواصل مباشر مع فريق الخبراء</strong>
+                                <span data-i18n="app.f3_desc">محادثة فورية مع محاسبين ومستشارين متخصصين</span>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="app-feature-icon"><i class="fas fa-shield-halved"></i></div>
+                            <div class="app-feature-text">
+                                <strong data-i18n="app.f4">حماية وتشفير كامل للبيانات</strong>
+                                <span data-i18n="app.f4_desc">تشفير متقدم بمعايير AES-256 لأمان بياناتك</span>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="app-feature-icon"><i class="fas fa-robot"></i></div>
+                            <div class="app-feature-text">
+                                <strong data-i18n="app.f5">مساعد ذكي مدمج</strong>
+                                <span data-i18n="app.f5_desc">اسأل واحصل على إجابات فورية عن خدماتنا</span>
+                            </div>
+                        </div>
+                        <div class="app-feature">
+                            <div class="app-feature-icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="app-feature-text">
+                                <strong data-i18n="app.f6">حجز المواعيد والاستشارات</strong>
+                                <span data-i18n="app.f6_desc">احجز موعدك مع خبرائنا بضغطة زر واحدة</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-store-btns">
+                        <a href="#" class="store-btn" aria-label="Google Play">
+                            <i class="fab fa-google-play"></i>
+                            <div class="store-btn-text">
+                                <small data-i18n="app.get_on">متاح على</small>
+                                <strong>Google Play</strong>
+                            </div>
+                        </a>
+                        <a href="#" class="store-btn" aria-label="App Store">
+                            <i class="fab fa-apple"></i>
+                            <div class="store-btn-text">
+                                <small data-i18n="app.download_on">حمّل من</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="app-stats">
+                        <div class="app-stat">
+                            <strong>4.8</strong>
+                            <span>⭐ <span data-i18n="app.rating">التقييم</span></span>
+                        </div>
+                        <div class="app-stat-divider"></div>
+                        <div class="app-stat">
+                            <strong>10K+</strong>
+                            <span data-i18n="app.downloads">تحميل</span>
+                        </div>
+                        <div class="app-stat-divider"></div>
+                        <div class="app-stat">
+                            <strong>Flutter</strong>
+                            <span data-i18n="app.tech">تقنية متعددة المنصات</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-mockup fade-in">
+                    <div class="phone-glow"></div>
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="phone-screen-logo">
+                                <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/Untitled_design-removebg-preview.png" alt="App Logo">
+                            </div>
+                            <h3>alfatlawy Co</h3>
+                            <p data-i18n="app.phone_desc">خدمات محاسبية واستشارية متكاملة</p>
+                            <div class="phone-screen-features">
+                                <div class="phone-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="app.phone_f1">التدقيق والمحاسبة</span></div>
+                                <div class="phone-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="app.phone_f2">الاستشارات الإدارية</span></div>
+                                <div class="phone-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="app.phone_f3">التخطيط الضريبي</span></div>
+                                <div class="phone-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="app.phone_f4">المساعد الذكي</span></div>
+                                <div class="phone-feature-item"><i class="fas fa-check-circle"></i> <span data-i18n="app.phone_f5">حجز المواعيد</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-frame phone-frame-secondary">
+                        <div class="phone-screen phone-screen-chat">
+                            <div class="phone-chat-header">
+                                <i class="fas fa-robot"></i>
+                                <span data-i18n="app.phone_chat_title">المساعد الذكي</span>
+                            </div>
+                            <div class="phone-chat-messages">
+                                <div class="phone-chat-bot" data-i18n="app.phone_chat_bot1">مرحباً! كيف يمكنني مساعدتك؟</div>
+                                <div class="phone-chat-user" data-i18n="app.phone_chat_user1">ما هي خدماتكم؟</div>
+                                <div class="phone-chat-bot" data-i18n="app.phone_chat_bot2">نقدم خدمات التدقيق والمحاسبة والاستشارات...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=1920&q=80" alt="" class="cta-bg-img" loading="lazy">
+        <div class="cta-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container fade-in">
+            <h2 data-i18n="cta.title">هل تحتاج إلى استشارة مهنية؟</h2>
+            <p data-i18n="cta.desc">تواصل معنا اليوم واحصل على استشارة من خبرائنا المتخصصين</p>
+            <div class="cta-btns">
+                <a href="join.html" class="btn btn-primary" data-i18n="cta.btn_contact">تواصل معنا <i class="fas fa-arrow-left"></i></a>
+                <a href="tel:9647724596108" class="btn btn-glass" data-i18n="cta.btn_call">اتصل بنا <i class="fas fa-phone-alt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="colophon">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path d="M0,35 C360,70 720,0 1080,35 C1200,50 1360,20 1440,40 L1440,70 L0,70 Z" /></svg>
+        </div>
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col">
+                        <h3 data-i18n="footer.links">روابط سريعة</h3>
+                        <ul>
+                            <li><a href="index.html" data-i18n="nav.home">الرئيسية</a></li>
+                            <li><a href="about.html" data-i18n="nav.about">من نحن</a></li>
+                            <li><a href="services.html" data-i18n="nav.services">خدماتنا</a></li>
+                            <li><a href="team.html" data-i18n="nav.team">فريقنا</a></li>
+                            <li><a href="join.html" data-i18n="nav.contact">للتواصل معنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-center">
+                        <div class="footer-logo animated-logo">
+                            <img src="https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/Untitled_design-removebg-preview.png" alt="alfatlawy Co">
+                        </div>
+                        <p data-i18n="footer.desc">في عام 1994 بدأت رحلتنا كوكالة تأمين لشركة التأمين الوطنية</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="X Twitter"><i class="fab fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/company/al-fatlawy-for-management-consultancy" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <h3 data-i18n="footer.contact">للتواصل</h3>
+                        <ul class="contact-list">
+                            <li><a href="tel:9647724596108"><i class="fas fa-phone-alt"></i> 9647724596108</a></li>
+                            <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.address">بغداد - السيدية</span></li>
+                            <li><a href="mailto:info@alfatlawy-cpa.com.iq"><i class="fas fa-envelope"></i> info@alfatlawy-cpa.com.iq</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>Copyright &copy; 2026 alfatlawy Co | Designed by <a href="https://mywebsite0776.web.app/?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNTY3MDY3MzQzMzUyNDI3AAGnwS3yZzEiBIu3q-q-ecYvZ8EO3v041uL3YpDj0C1xq-jYMt0_IpzYBrRKwj0_aem_mv41k5xsBDDGtcyn5JAxog" target="_blank" rel="noopener noreferrer"><strong>BGHUSSEINSASH</strong></a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-to-top" id="scrollToTop"><i class="fas fa-chevron-up"></i></div>
+    <a href="https://wa.me/9647724596108" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب"><i class="fab fa-whatsapp"></i></a>
+
+    <!-- AI Chatbot -->
+    <button class="chat-toggle-btn" id="chatToggle" aria-label="المساعد الذكي">
+        <span class="chat-icon-open"><i class="fas fa-robot"></i></span>
+        <span class="chat-icon-close"><i class="fas fa-times"></i></span>
+        <span class="chat-badge">1</span>
+    </button>
+    <div class="chat-panel" id="chatPanel">
+        <div class="chat-header">
+            <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+            <div class="chat-header-info">
+                <h4 data-i18n="chat.title">المساعد الذكي</h4>
+                <span class="chat-status-row">
+                    <span class="chat-status-dot"></span>
+                    <span data-i18n="chat.status">متصل الآن</span>
+                    <span class="chat-ai-badge" id="chatAiBadge" title="AI مفعّل"><i class="fas fa-brain"></i> AI</span>
+                </span>
+            </div>
+            <div class="chat-header-actions">
+                <button class="chat-voice-toggle" id="chatVoiceToggle" title="تشغيل/إيقاف الصوت" aria-label="تشغيل الصوت">
+                    <i class="fas fa-volume-up"></i>
+                </button>
+                <button class="chat-header-close" id="chatClose" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="chat-messages" id="chatMessages"></div>
+        <div class="chat-quick-replies" id="chatQuickReplies"></div>
+        <div class="chat-input-area">
+            <button class="chat-mic-btn" id="chatMic" aria-label="تحدث بصوتك" title="تحدث بصوتك">
+                <i class="fas fa-microphone"></i>
+                <span class="mic-pulse"></span>
+            </button>
+            <input type="text" class="chat-input" id="chatInput" placeholder="اكتب رسالتك..." data-i18n-placeholder="chat.placeholder" autocomplete="off">
+            <button class="chat-send-btn" id="chatSend" aria-label="إرسال"><i class="fas fa-paper-plane"></i></button>
+        </div>
+        <div class="chat-listening-bar" id="chatListeningBar">
+            <div class="listening-waves">
+                <span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <span class="listening-text" data-i18n="chat.listening">جارٍ الاستماع...</span>
+            <button class="listening-stop" id="chatMicStop"><i class="fas fa-stop-circle"></i></button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
