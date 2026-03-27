@@ -161,7 +161,7 @@ class AboutScreen extends StatelessWidget {
             const TeamCard(
               imageUrl:
                   'https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/co-founder-2.png',
-              name: 'اكرم حسن عبد الحسين',
+              name: 'اكرم كريم عبد الحسين',
               role: 'المؤسس والشريك الإداري',
               fullWidth: true,
             ),

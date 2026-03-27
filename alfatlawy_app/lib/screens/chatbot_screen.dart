@@ -100,7 +100,7 @@ final _chatDatabase = <String, _ChatLangData>{
       ),
       _Pattern(
         ['فريق', 'أعضاء', 'موظف', 'مؤسس', 'team'],
-        'فريقنا يتكون من نخبة من الخبراء:\n\n👤 اكرم حسن عبد الحسين — المؤسس والشريك الإداري\n👤 حسن عبد الحسين حمادي — المؤسس المشارك\n👤 فاضل عبد الحسين — مستشار قانوني\n\nوفريق من 50+ خبير متخصص!',
+        'فريقنا يتكون من نخبة من الخبراء:\n\n👤 اكرم كريم عبد الحسين — المؤسس والشريك الإداري\n👤 حسن عبد الحسين حمادي — المؤسس المشارك\n👤 فاضل عبد الحسين — مستشار قانوني\n\nوفريق من 50+ خبير متخصص!',
       ),
       _Pattern(
         ['تطبيق', 'app', 'اندرويد', 'ايفون', 'جوال', 'موبايل'],
@@ -176,7 +176,7 @@ final _chatDatabase = <String, _ChatLangData>{
       ),
       _Pattern(
         ['team', 'member', 'founder'],
-        'Our leadership team:\n\n👤 Akram Hassan — Founder & Managing Partner\n👤 Hassan Abdul-Hussein — Co-Founder\n👤 Fadhil Abdul-Hussein — Legal Advisor\n\nPlus 50+ expert specialists!',
+        'Our leadership team:\n\n👤 Akram Kareem — Founder & Managing Partner\n👤 Hassan Abdul-Hussein — Co-Founder\n👤 Fadhil Abdul-Hussein — Legal Advisor\n\nPlus 50+ expert specialists!',
       ),
       _Pattern(
         ['app', 'android', 'iphone', 'mobile', 'download'],

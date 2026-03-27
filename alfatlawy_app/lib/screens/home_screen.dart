@@ -260,7 +260,7 @@ class HomeScreen extends StatelessWidget {
                     TeamCard(
                       imageUrl:
                           'https://alfatlawy-cpa.com.iq/wp-content/uploads/2024/11/co-founder-2.png',
-                      name: 'اكرم حسن عبد الحسين',
+                      name: 'اكرم كريم عبد الحسين',
                       role: 'المؤسس والشريك الإداري',
                     ),
                     TeamCard(
