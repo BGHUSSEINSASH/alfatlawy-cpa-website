@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>شراكتنا الدولية - alfatlawy Co</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +66,28 @@
     <section class="page-hero">
         <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1920&q=80" alt="" class="page-hero-img" loading="lazy">
         <div class="hero-shapes"><div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div></div>
+        <!-- 3D Animated SVG - Global Partnership -->
+        <div class="svg-illustration" style="position:absolute;bottom:8%;right:5%;width:170px;opacity:0.3;pointer-events:none;z-index:1;">
+            <svg viewBox="0 0 170 170" fill="none">
+                <!-- Globe -->
+                <circle cx="85" cy="85" r="55" stroke="#d4a843" stroke-width="1.5" fill="rgba(212,168,67,0.03)"/>
+                <ellipse cx="85" cy="85" rx="30" ry="55" stroke="rgba(255,255,255,0.1)" stroke-width="1" fill="none">
+                    <animateTransform attributeName="transform" type="rotate" from="0 85 85" to="360 85 85" dur="30s" repeatCount="indefinite"/>
+                </ellipse>
+                <ellipse cx="85" cy="85" rx="55" ry="20" stroke="rgba(255,255,255,0.08)" stroke-width="1" fill="none"/>
+                <!-- Handshake simplified -->
+                <path d="M55 90 L70 80 L85 85 L100 78 L115 88" stroke="#c8102e" stroke-width="1.5" fill="none" stroke-linecap="round">
+                    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="4s" repeatCount="indefinite"/>
+                </path>
+                <!-- Orbiting dots -->
+                <circle r="4" fill="#d4a843" opacity="0.5">
+                    <animateMotion dur="10s" repeatCount="indefinite" path="M85,30 A55,55 0 1,1 84,30"/>
+                </circle>
+                <circle r="3" fill="#c8102e" opacity="0.4">
+                    <animateMotion dur="8s" repeatCount="indefinite" path="M85,30 A55,55 0 1,0 84,30"/>
+                </circle>
+            </svg>
+        </div>
         <div class="page-hero-content fade-in">
             <div class="section-tag" data-i18n="partnership.tag">شراكة عالمية</div>
             <h1 data-i18n="nav.partnership">شراكتنا الدولية</h1>
@@ -105,7 +128,19 @@
         </div>
     </section>
 
-    <section class="content-section alt-bg">
+    <section class="content-section alt-bg" style="position:relative;overflow:hidden;">
+        <!-- Animated connected nodes decoration -->
+        <div style="position:absolute;top:15px;left:15px;width:130px;opacity:0.06;pointer-events:none;z-index:0;">
+            <svg viewBox="0 0 130 130" fill="none">
+                <circle cx="25" cy="25" r="8" stroke="#d4a843" stroke-width="1.5" fill="none"><animate attributeName="r" values="6;10;6" dur="4s" repeatCount="indefinite"/></circle>
+                <circle cx="105" cy="25" r="8" stroke="#c8102e" stroke-width="1.5" fill="none"><animate attributeName="r" values="6;10;6" dur="4s" begin="1s" repeatCount="indefinite"/></circle>
+                <circle cx="65" cy="105" r="8" stroke="#d4a843" stroke-width="1.5" fill="none"><animate attributeName="r" values="6;10;6" dur="4s" begin="2s" repeatCount="indefinite"/></circle>
+                <circle cx="65" cy="55" r="12" stroke="#1a1f36" stroke-width="2" fill="rgba(26,31,54,0.05)"><animate attributeName="r" values="10;14;10" dur="3s" repeatCount="indefinite"/></circle>
+                <line x1="25" y1="25" x2="65" y2="55" stroke="#d4a843" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/></line>
+                <line x1="105" y1="25" x2="65" y2="55" stroke="#c8102e" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/></line>
+                <line x1="65" y1="105" x2="65" y2="55" stroke="#d4a843" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="0" to="-14" dur="2s" repeatCount="indefinite"/></line>
+            </svg>
+        </div>
         <div class="container">
             <div class="section-header fade-in">
                 <div class="section-tag" data-i18n="partnership.benefits_tag">مزايا الشراكة</div>
@@ -284,5 +319,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

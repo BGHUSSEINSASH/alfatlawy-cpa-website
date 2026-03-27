@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>للتواصل معنا - alfatlawy Co</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +66,31 @@
     <section class="page-hero">
         <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80" alt="" class="page-hero-img" loading="lazy">
         <div class="hero-shapes"><div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div></div>
+        <!-- 3D Animated SVG - Contact Envelope -->
+        <div class="svg-illustration" style="position:absolute;bottom:10%;right:5%;width:140px;opacity:0.3;pointer-events:none;z-index:1;">
+            <svg viewBox="0 0 140 120" fill="none">
+                <!-- Envelope body -->
+                <rect x="15" y="30" width="110" height="70" rx="6" stroke="#d4a843" stroke-width="1.5" fill="rgba(212,168,67,0.04)"/>
+                <polyline points="15,30 70,72 125,30" stroke="#d4a843" stroke-width="1.5" fill="none"/>
+                <!-- Flying letter -->
+                <rect x="48" y="10" width="44" height="32" rx="3" stroke="#c8102e" stroke-width="1" fill="rgba(200,16,46,0.06)">
+                    <animate attributeName="y" values="10;5;10" dur="3s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+                </rect>
+                <line x1="55" y1="20" x2="85" y2="20" stroke="rgba(200,16,46,0.3)" stroke-width="1"/>
+                <line x1="55" y1="26" x2="78" y2="26" stroke="rgba(200,16,46,0.2)" stroke-width="1"/>
+                <line x1="55" y1="32" x2="72" y2="32" stroke="rgba(200,16,46,0.15)" stroke-width="1"/>
+                <!-- Signal waves -->
+                <circle cx="105" cy="22" r="6" stroke="rgba(212,168,67,0.3)" stroke-width="0.8" fill="none">
+                    <animate attributeName="r" values="6;12;6" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite"/>
+                </circle>
+                <circle cx="105" cy="22" r="3" stroke="rgba(212,168,67,0.4)" stroke-width="0.8" fill="none">
+                    <animate attributeName="r" values="3;9;3" dur="2s" repeatCount="indefinite"/>
+                    <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </div>
         <div class="page-hero-content fade-in">
             <div class="section-tag" data-i18n="contact.tag">تواصل معنا</div>
             <h1 data-i18n="nav.contact">للتواصل معنا</h1>
@@ -295,5 +321,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

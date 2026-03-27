@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>فريقنا - alfatlawy Co</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -65,6 +66,21 @@
     <section class="page-hero">
         <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1920&q=80" alt="" class="page-hero-img" loading="lazy">
         <div class="hero-shapes"><div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div></div>
+        <!-- 3D Animated SVG - Team Network -->
+        <div class="svg-illustration" style="position:absolute;bottom:10%;left:5%;width:150px;opacity:0.3;pointer-events:none;z-index:1;">
+            <svg viewBox="0 0 150 150" fill="none">
+                <circle cx="75" cy="25" r="15" stroke="#d4a843" stroke-width="1.5" fill="rgba(212,168,67,0.05)"/>
+                <circle cx="25" cy="100" r="12" stroke="#c8102e" stroke-width="1" fill="rgba(200,16,46,0.05)"/>
+                <circle cx="125" cy="100" r="12" stroke="#c8102e" stroke-width="1" fill="rgba(200,16,46,0.05)"/>
+                <circle cx="75" cy="135" r="10" stroke="#d4a843" stroke-width="1" fill="rgba(212,168,67,0.05)"/>
+                <line x1="75" y1="40" x2="25" y2="88" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="0" to="14" dur="2s" repeatCount="indefinite"/></line>
+                <line x1="75" y1="40" x2="125" y2="88" stroke="rgba(255,255,255,0.15)" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="0" to="14" dur="2s" repeatCount="indefinite"/></line>
+                <line x1="25" y1="112" x2="75" y2="125" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="14" to="0" dur="2s" repeatCount="indefinite"/></line>
+                <line x1="125" y1="112" x2="75" y2="125" stroke="rgba(255,255,255,0.1)" stroke-width="1" stroke-dasharray="4 3"><animate attributeName="stroke-dashoffset" from="14" to="0" dur="2s" repeatCount="indefinite"/></line>
+                <circle r="3" fill="#d4a843" opacity="0.6"><animateMotion dur="3s" repeatCount="indefinite" path="M75,40 L25,88"/></circle>
+                <circle r="3" fill="#c8102e" opacity="0.6"><animateMotion dur="3s" repeatCount="indefinite" path="M75,40 L125,88"/></circle>
+            </svg>
+        </div>
         <div class="page-hero-content fade-in">
             <div class="section-tag" data-i18n="team.tag">فريق العمل</div>
             <h1 data-i18n="team.title">فريقنا</h1>
@@ -315,5 +331,6 @@
     </div>
 
     <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
