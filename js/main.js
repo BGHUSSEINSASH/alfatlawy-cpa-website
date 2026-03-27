@@ -1651,10 +1651,12 @@ document.addEventListener('DOMContentLoaded', function() {
         function addMessage(text, sender, isAI) {
             var msgDiv = document.createElement('div');
             msgDiv.className = 'chat-msg ' + sender;
-            var avatarIcon = sender === 'bot' ? 'fas fa-robot' : 'fas fa-user';
+            var avatarHtml = sender === 'bot'
+                ? '<svg width="22" height="22" viewBox="0 0 40 40" fill="none"><rect x="6" y="12" width="28" height="20" rx="6" fill="var(--accent)" opacity="0.15"/><rect x="8" y="14" width="24" height="16" rx="4" fill="none" stroke="var(--accent)" stroke-width="1.5"/><circle cx="16" cy="22" r="2.5" fill="var(--accent)"/><circle cx="24" cy="22" r="2.5" fill="#d4a843"/><rect x="14" y="27" width="12" height="2" rx="1" fill="var(--accent)" opacity="0.4"/><circle cx="20" cy="6" r="2" fill="#d4a843"/><line x1="20" y1="8" x2="20" y2="12" stroke="#d4a843" stroke-width="1.5"/></svg>'
+                : '<i class="fas fa-user"></i>';
             var bubbleClass = 'chat-bubble' + (isAI ? ' ai-response' : '');
             msgDiv.innerHTML =
-                '<div class="chat-msg-avatar"><i class="' + avatarIcon + '"></i></div>' +
+                '<div class="chat-msg-avatar">' + avatarHtml + '</div>' +
                 '<div class="' + bubbleClass + '">' + text.replace(/\n/g, '<br>') + '</div>';
             chatMessages.appendChild(msgDiv);
             chatMessages.scrollTop = chatMessages.scrollHeight;
